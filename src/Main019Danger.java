@@ -51,6 +51,8 @@ public class Main019Danger {
 		
 		
 		System.out.println(classroom.printFullRelatory());
+		System.out.println(classroom.genderAmount());
+		
 		double classAverage = (student1.getAverageGrade() + student2.getAverageGrade() + 
 				student3.getAverageGrade() + student4.getAverageGrade() + student5.getAverageGrade()) / 5; 
 		System.out.println("Klassens medelbetyg är " + classAverage);
@@ -58,7 +60,8 @@ public class Main019Danger {
 		double classAgeAverage = (student1.getAge() + student2.getAge() + student3.getAge() 
 		+ student4.getAge() + student5.getAge()) / 5;
 		System.out.println("Klassens genomsnittsålder är  " + classAgeAverage);
-		System.out.println(classroom.genderAmount());
+		
+		
 	}
 
 }

@@ -72,9 +72,8 @@ public class Classroom019 {
 	}
 
 //Metod som skall beräkna antal elever med olika könsdefinition.
-public String toString() {
+public String genderAmount() {
 		
-		String genderAmount = ""; 
 		int genderF = 0; 
 		int genderM = 0; 
 		int genderO = 0;
@@ -89,8 +88,8 @@ public String toString() {
 				genderO ++;
 			}
 		}
-		genderAmount = "Fördelningen är " + genderF + " flickor/kvinnor, "
-				+ genderM + "pojkar/män och " + genderO + "ickebinär/med annan definition. ";
+		String genderAmount = "Fördelningen är " + genderF + " flickor/kvinnor, "
+				+ genderM + " pojkar/män och " + genderO + " ickebinär/med annan definition. ";
 		return genderAmount; 
 		
 	}
