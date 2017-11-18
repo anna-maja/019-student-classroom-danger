@@ -9,9 +9,9 @@ public class Main019Danger {
 		
 		Student019 student1 = new Student019("Anna-Maja", "Lithner", 46, 'f');
 		classroom.addNewStudent(student1);
-		student1.setFirstGrade(8.5);
-		student1.setSecondGrade(1.1);
-		student1.setThirdGrade(1.0);
+		student1.setFirstGrade(6);
+		student1.setSecondGrade(6);
+		student1.setThirdGrade(6);
 		student1.calculateAverage();
 		student1.getAverageGrade();
 		
@@ -49,16 +49,25 @@ public class Main019Danger {
 		student5.calculateAverage(); 
 		student5.getAverageGrade();
 		
+		Student019 student6 = new Student019("Donald", "Trumpen", 52, 'm');
+		classroom.addNewStudent(student6);
+		student6.setFirstGrade(2.0);
+		student6.setSecondGrade(1.6);
+		student6.setThirdGrade(3.5);
+		student6.calculateAverage();
+		student6.getAverageGrade();
+		
 		
 		System.out.println(classroom.printFullRelatory());
 		System.out.println(classroom.genderAmount());
 		
 		double classAverage = (student1.getAverageGrade() + student2.getAverageGrade() + 
-				student3.getAverageGrade() + student4.getAverageGrade() + student5.getAverageGrade()) / 5; 
+				student3.getAverageGrade() + student4.getAverageGrade() + student5.getAverageGrade()
+				+ student6.getAverageGrade()) / 6; 
 		System.out.println("Klassens medelbetyg är " + classAverage);
 		
 		double classAgeAverage = (student1.getAge() + student2.getAge() + student3.getAge() 
-		+ student4.getAge() + student5.getAge()) / 5;
+		+ student4.getAge() + student5.getAge() + student6.getAge()) / 6;
 		System.out.println("Klassens genomsnittsålder är  " + classAgeAverage);
 		
 		
